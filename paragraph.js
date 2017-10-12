@@ -1,4 +1,4 @@
-var paragraph = [{"The toilet is a useful invention." : "m"},
-{"The toilet helps prevent the spread of disease." : "d"},
-{"The toilet allows many people to live in one place." : "d"},
-{"The toilet is a beautiful throne that makes you feel like royalty." : "d"}]
+var paragraph = [{"Vegetables are good for you." : "m"},
+{"Vegetables help your immune system." : "d"},
+{"Vegetables help your digestive system work properly." : "d"},
+{"Vegetables help your whole body function." : "d"}]
