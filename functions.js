@@ -129,4 +129,8 @@ window.onload = function (){
 		//console.log(Object.keys(paragraph[i])[0]);
 		addSentence(Object.keys(paragraph[i])[0],i);
 	}
+	var mainideabtn = document.getElementById("mainideabtn");
+	var detailsbtn = document.getElementById("detailsbtn");
+	mainideabtn.addEventListener("click",alert("Clicked Main Idea"));
+	detailsbtn.addEventListener("click",alert("Clicked Details"));
 }
