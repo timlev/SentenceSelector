@@ -128,7 +128,7 @@ window.onload = function (){
 	for (var i in paragraph){
 		//console.log(Object.keys(paragraph[i])[0]);
 		addSentence(Object.keys(paragraph[i])[0],i);
-	}
+	};
 	var mainideabtn = document.getElementById("mainideabtn");
 	var detailsbtn = document.getElementById("detailsbtn");
 	mainideabtn.addEventListener("click",function(){alert("Clicked Main 
