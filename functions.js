@@ -132,7 +132,7 @@ window.onload = function (){
 	var mainideabtn = document.getElementById("mainideabtn");
 	var detailsbtn = document.getElementById("detailsbtn");
 	mainideabtn.addEventListener("click",function(){alert("Clicked Main 
-Idea")});
+Idea");});
 	detailsbtn.addEventListener("click",function() {alert("Clicked 
-Details")});
+Details");});
 }
