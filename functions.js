@@ -129,6 +129,6 @@ window.onload = function (){
 	};
 	var mainideabtn = document.getElementById("mainideabtn");
 	var detailsbtn = document.getElementById("detailsbtn");
-	mainideabtn.addEventListener("click",function(){document.getElementById("status").innerText = document.forms[0][0].checked = True;});
+	mainideabtn.addEventListener("click",function(){document.getElementById("status").innerText = document.document.getElementById("mainidearadio").checked = true;});
 	detailsbtn.addEventListener("click",function() {alert("Clicked Details");});
 };
