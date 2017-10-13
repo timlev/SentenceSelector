@@ -1,7 +1,3 @@
-function addTitle(title){
-	//Not sure what to do here
-};
-
 function addSentence(sent, ind){
 	var par = document.getElementById("paragraph");
 	var span = document.createElement("span");
