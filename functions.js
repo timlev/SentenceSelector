@@ -1,6 +1,6 @@
 function addTitle(title){
 	//Not sure what to do here
-}
+};
 
 function addSentence(sent, ind){
 	var par = document.getElementById("paragraph");
@@ -13,7 +13,7 @@ function addSentence(sent, ind){
 	var space = document.createTextNode(" ");
 	par.appendChild(space);
 	//par.appendChild(" ");
-}
+};
 
 function checkInput(){
 	input = document.forms[0];
@@ -24,7 +24,7 @@ function checkInput(){
 			return input[i].value;
 		}
 	}
-}
+};
 
 function fillCategories(){
 	var mainideas = document.getElementsByClassName("mainidea");
@@ -51,7 +51,8 @@ function fillCategories(){
 	// console.log(detailsset);
 
 	return {"mainideas" : mainideasset, "details": detailsset};
-}
+};
+
 function createmainli(text){
 	//console.log(text);
 	var ulmainidea = document.getElementById("mainidea");
@@ -59,7 +60,8 @@ function createmainli(text){
 	li.innerText = text;
 	ulmainidea.appendChild(li);
 	checkItem(li);
-}
+};
+
 function createdetailli(text){
 	// console.log(text);
 	var uldetails = document.getElementById("details");
@@ -67,7 +69,7 @@ function createdetailli(text){
 	li.innerText = text;
 	uldetails.appendChild(li);
 	checkItem(li);
-}
+};
 
 function checkItem(item){
 	// console.log(item.parentElement.id.slice(0,1));
@@ -88,7 +90,7 @@ function checkItem(item){
 
 		}
 	}
-}
+};
 
 function placeCategories(){
 	var input = fillCategories();
@@ -98,7 +100,7 @@ function placeCategories(){
 	uldetails.innerHTML = "";
 	input.mainideas.forEach(createmainli);
 	input.details.forEach(createdetailli);
-}
+};
 
 function clickHandler(e){
 	var selecting = checkInput();
@@ -121,7 +123,7 @@ function clickHandler(e){
 	}
 placeCategories();
 
-}
+};
 
 window.onload = function (){
 	var par = document.getElementById("paragraph");
@@ -131,8 +133,6 @@ window.onload = function (){
 	};
 	var mainideabtn = document.getElementById("mainideabtn");
 	var detailsbtn = document.getElementById("detailsbtn");
-	mainideabtn.addEventListener("click",function(){alert("Clicked Main 
-Idea");});
-	detailsbtn.addEventListener("click",function() {alert("Clicked 
-Details");});
-}
+	mainideabtn.addEventListener("click",function(){alert("Clicked Main Idea");});
+	detailsbtn.addEventListener("click",function() {alert("Clicked Details");});
+};
