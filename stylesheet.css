@@ -1,0 +1,24 @@
+p {
+	text-indent: 50px;
+}
+span:hover {
+	background-color: 87cefa;
+}
+.mainidea {
+	background-color: #6495ED;
+}
+#mainquest {
+	background-color: #6495ED;
+}
+.details {
+	background-color: 	#FF5733;
+}
+#detquest {
+	background-color: #FF5733;
+}
+li .correct{
+	background-color: #75FF33;
+}
+li .wrong{
+	background-color: #FFBD33;
+}
