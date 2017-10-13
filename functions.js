@@ -131,6 +131,8 @@ window.onload = function (){
 	}
 	var mainideabtn = document.getElementById("mainideabtn");
 	var detailsbtn = document.getElementById("detailsbtn");
-	mainideabtn.addEventListener("click",alert("Clicked Main Idea"));
-	detailsbtn.addEventListener("click",alert("Clicked Details"));
+	mainideabtn.addEventListener("click",function(){alert("Clicked Main 
+Idea")});
+	detailsbtn.addEventListener("click",function() {alert("Clicked 
+Details")});
 }
