@@ -90,7 +90,7 @@ function checkItem(item){
 		}
 	}
 	var correct = document.getElementsByClassName("correct").length;
-	
+
 	document.getElementById("score").innerText = "Score: " + correct.toString() + "/" + total.toString();
 };
 
@@ -134,6 +134,7 @@ window.onload = function (){
 	};
 	var mainideabtn = document.getElementById("mainideabtn");
 	var detailsbtn = document.getElementById("detailsbtn");
+	detailsbtn.style.background = "white";
 	mainideabtn.addEventListener("click",function(){document.getElementById("mainidearadio").checked = true;});
 	detailsbtn.addEventListener("click",function() {document.getElementById("detailsradio").checked = true;});
 };
