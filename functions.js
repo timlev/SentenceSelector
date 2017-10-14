@@ -71,21 +71,27 @@ function checkItem(item){
 	// console.log(item.parentElement.id.slice(0,1));
 	// console.log(item);
 	text = item.innerText;
+	var total = paragraph.length;
+	//var correct = 0;
 	for (var i in paragraph){
 		// console.log(paragraph[i]);
 		if (paragraph[i].hasOwnProperty(text)){
 			console.log(i);
 			var kind = paragraph[i][text];
 			if (kind === item.parentElement.id.slice(0,1)){
-				item.style.background = "#75FF33";
+				item.className = "correct";
+				// item.style.background = "#75FF33";
 			}
 			else {
-				item.style.background = "#FFBD33";
+				item.className = "wrong";
+				// item.style.background = "#FFBD33";
 			}
 			console.log(kind);
-
 		}
 	}
+	var correct = document.getElementsByClassName("correct").length;
+	
+	document.getElementById("score").innerText = "Score: " + correct.toString() + "/" + total.toString();
 };
 
 function placeCategories(){
@@ -118,7 +124,6 @@ function clickHandler(e){
 		}
 	}
 placeCategories();
-
 };
 
 window.onload = function (){

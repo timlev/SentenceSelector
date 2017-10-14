@@ -16,9 +16,9 @@ span:hover {
 #detquest {
 	background-color: #FF5733;
 }
-li .correct{
+li.correct{
 	background-color: #75FF33;
 }
-li .wrong{
+li.wrong{
 	background-color: #FFBD33;
 }
